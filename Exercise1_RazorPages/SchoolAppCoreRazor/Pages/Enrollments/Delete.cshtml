@@ -1,0 +1,4 @@
+@page
+@model SchoolAppCoreRazor.Pages.Enrollments.DeleteModel
+@{ ViewData["Title"] = "Delete Enrollment"; }
+<h1>Delete Enrollment</h1><table><tr><th>Student</th><td>@Model.Item.Student?.FirstName @Model.Item.Student?.LastName</td></tr><tr><th>Course</th><td>@Model.Item.Course?.Title</td></tr><tr><th>Grade</th><td>@Model.Item.Grade</td></tr></table><br /><form method="post"><input type="hidden" asp-for="Item.EnrollmentID" /><button class="btn danger" type="submit">Delete</button> <a class="btn secondary" asp-page="Index">Cancel</a></form>

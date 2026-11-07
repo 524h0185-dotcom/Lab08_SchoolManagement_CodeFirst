@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - SchoolApp MVC</title>
+
+    <link rel="stylesheet"
+          href="~/css/site.css"
+          asp-append-version="true" />
+</head>
+<body>
+    <nav>
+        <a class="brand" asp-controller="Home" asp-action="Index">
+            SchoolApp MVC
+        </a>
+        <a asp-controller="Home" asp-action="Index">
+            Home
+        </a>
+        <a asp-controller="Students" asp-action="Index">
+            Students
+        </a>
+        <a asp-controller="Courses" asp-action="Index">
+            Courses
+        </a>
+        <a asp-controller="Instructors" asp-action="Index">
+            Instructors
+        </a>
+        <a asp-controller="Enrollments" asp-action="Index">
+            Enrollments
+        </a>
+        <a asp-controller="Departments" asp-action="Index">
+            Departments
+        </a>
+    </nav>
+
+    <main class="container">
+        @RenderBody()
+    </main>
+
+    <footer>
+        Lab 8 - ASP.NET Core MVC - Code First
+    </footer>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>A

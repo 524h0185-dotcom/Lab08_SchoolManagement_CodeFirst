@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SchoolApp Razor</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+<nav>
+    <a class="brand" asp-page="/Index">SchoolApp Razor</a>
+    <a asp-page="/Index">Home</a>
+    <a asp-page="/Students/Index">Students</a>
+    <a asp-page="/Courses/Index">Courses</a>
+    <a asp-page="/Instructors/Index">Instructors</a>
+    <a asp-page="/Enrollments/Index">Enrollments</a>
+    <a asp-page="/Departments/Index">Departments</a>
+</nav>
+<main class="container">@RenderBody()</main>
+<footer>Lab 8 - ASP.NET Core Razor Pages - Code First</footer>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

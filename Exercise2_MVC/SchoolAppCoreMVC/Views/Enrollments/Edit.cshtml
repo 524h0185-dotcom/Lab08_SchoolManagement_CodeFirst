@@ -1,0 +1,3 @@
+@model SchoolAppCoreMVC.Models.Enrollment
+@{ ViewData["Title"] = "Edit Enrollment"; }
+<h1>Edit Enrollment</h1><form asp-action="Edit" method="post"><input type="hidden" asp-for="EnrollmentID" /><label>Student</label><select asp-for="StudentID" asp-items="ViewBag.StudentID"></select><label>Course</label><select asp-for="CourseID" asp-items="ViewBag.CourseID"></select><label asp-for="Grade"></label><input asp-for="Grade" type="number" step="0.01"/><span asp-validation-for="Grade"></span><div class="actions" style="margin-top:16px"><button type="submit">Save</button><a class="btn secondary" asp-action="Index">Back</a></div></form>

@@ -1,0 +1,3 @@
+@model SchoolAppCoreMVC.Models.Student
+@{ ViewData["Title"] = "Delete Student"; }
+<h1>Delete Student</h1><p>Are you sure you want to delete this record?</p><table><tr><th>First Name</th><td>@Model.FirstName</td></tr><tr><th>Last Name</th><td>@Model.LastName</td></tr><tr><th>Enrollment Date</th><td>@Model.EnrollmentDate</td></tr></table><br/><form asp-action="Delete" method="post"><input type="hidden" asp-for="StudentID"/><button class="btn danger" type="submit">Delete</button> <a class="btn secondary" asp-action="Index">Cancel</a></form>

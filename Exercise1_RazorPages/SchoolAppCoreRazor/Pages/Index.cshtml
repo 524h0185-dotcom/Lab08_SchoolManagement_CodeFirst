@@ -1,0 +1,12 @@
+@page
+@model SchoolAppCoreRazor.Pages.IndexModel
+@{ ViewData["Title"] = "Home"; }
+<h1>School Management - Razor Pages</h1>
+<p>ASP.NET Core Razor Pages with Entity Framework Core Code First.</p>
+<div class="card-grid">
+    <div class="card"><h3>Students</h3><a asp-page="/Students/Index">Manage students</a></div>
+    <div class="card"><h3>Courses</h3><a asp-page="/Courses/Index">Manage courses</a></div>
+    <div class="card"><h3>Instructors</h3><a asp-page="/Instructors/Index">Manage instructors</a></div>
+    <div class="card"><h3>Enrollments</h3><a asp-page="/Enrollments/Index">Manage enrollments</a></div>
+    <div class="card"><h3>Departments</h3><a asp-page="/Departments/Index">Manage departments</a></div>
+</div>

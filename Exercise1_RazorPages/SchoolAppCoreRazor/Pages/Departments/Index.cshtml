@@ -1,0 +1,8 @@
+@page
+@model SchoolAppCoreRazor.Pages.Departments.IndexModel
+@{ ViewData["Title"] = "Departments"; }
+<h1>Departments</h1>
+<p><a class="btn" asp-page="Create">Create New</a></p>
+<table><thead><tr><th>Department Name</th><th>Budget</th><th>Start Date</th><th>Actions</th></tr></thead><tbody>
+@foreach (var item in Model.Items) {<tr><td>@item.DepartmentName</td><td>@item.Budget</td><td>@item.StartDate</td><td class="actions"><a asp-page="Edit" asp-route-id="@item.DepartmentID">Edit</a><a asp-page="Details" asp-route-id="@item.DepartmentID">Details</a><a asp-page="Delete" asp-route-id="@item.DepartmentID">Delete</a></td></tr>}
+</tbody></table>

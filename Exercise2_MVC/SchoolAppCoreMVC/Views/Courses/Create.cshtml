@@ -1,0 +1,3 @@
+@model SchoolAppCoreMVC.Models.Course
+@{ ViewData["Title"] = "Create Course"; }
+<h1>Create Course</h1><form asp-action="Create" method="post"><label asp-for="Title"></label><input asp-for="Title"/><span asp-validation-for="Title"></span><label asp-for="Credits"></label><input asp-for="Credits" type="number"/><span asp-validation-for="Credits"></span><label>Department</label><select asp-for="DepartmentID" asp-items="ViewBag.DepartmentID"></select><div class="actions" style="margin-top:16px"><button type="submit">Save</button><a class="btn secondary" asp-action="Index">Back</a></div></form>

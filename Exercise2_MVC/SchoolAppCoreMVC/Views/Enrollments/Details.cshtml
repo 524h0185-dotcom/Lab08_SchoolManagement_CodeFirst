@@ -1,0 +1,3 @@
+@model SchoolAppCoreMVC.Models.Enrollment
+@{ ViewData["Title"] = "Details Enrollment"; }
+<h1>Details Enrollment</h1><table><tr><th>Student</th><td>@Model.Student?.FirstName @Model.Student?.LastName</td></tr><tr><th>Course</th><td>@Model.Course?.Title</td></tr><tr><th>Grade</th><td>@Model.Grade</td></tr></table><br/><div class="actions"><a class="btn" asp-action="Edit" asp-route-id="@Model.EnrollmentID">Edit</a><a class="btn secondary" asp-action="Index">Back</a></div>

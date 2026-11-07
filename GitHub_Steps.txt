@@ -1,0 +1,12 @@
+LAB 8 - GITHUB STEPS
+
+1. Open Lab08_SchoolManagement_CodeFirst.sln in Visual Studio.
+2. View > Git Changes.
+3. Create/Initialize Git Repository at the Source folder.
+4. Repository name: Lab08-SchoolManagement-CodeFirst
+5. Commit message: Initial commit - Lab 8 Razor and MVC Code First
+6. Push to GitHub.
+7. Verify both folders are visible:
+   Exercise1_RazorPages
+   Exercise2_MVC
+8. Put the GitHub URL in the DOCX report.

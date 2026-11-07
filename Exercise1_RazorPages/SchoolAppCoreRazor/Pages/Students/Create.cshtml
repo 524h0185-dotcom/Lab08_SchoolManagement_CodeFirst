@@ -1,0 +1,8 @@
+@page
+@model SchoolAppCoreRazor.Pages.Students.CreateModel
+@{ ViewData["Title"] = "Create Student"; }
+<h1>Create Student</h1>
+<form method="post">
+<label asp-for="Item.FirstName">First Name</label><input asp-for="Item.FirstName" type="text" /><span asp-validation-for="Item.FirstName"></span><label asp-for="Item.LastName">Last Name</label><input asp-for="Item.LastName" type="text" /><span asp-validation-for="Item.LastName"></span><label asp-for="Item.EnrollmentDate">Enrollment Date</label><input asp-for="Item.EnrollmentDate" type="date" /><span asp-validation-for="Item.EnrollmentDate"></span>
+<div class="actions" style="margin-top:16px"><button type="submit">Save</button><a class="btn secondary" asp-page="Index">Back</a></div>
+</form>

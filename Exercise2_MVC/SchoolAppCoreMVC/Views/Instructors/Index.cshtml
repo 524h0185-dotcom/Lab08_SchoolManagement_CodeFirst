@@ -1,0 +1,3 @@
+@model IEnumerable<SchoolAppCoreMVC.Models.Instructor>
+@{ ViewData["Title"] = "Instructors"; }
+<h1>Instructors</h1><p><a class="btn" asp-action="Create">Create New</a></p><table><thead><tr><th>First Name</th><th>Last Name</th><th>Hire Date</th><th>Actions</th></tr></thead><tbody>@foreach (var item in Model) {<tr><td>@item.FirstName</td><td>@item.LastName</td><td>@item.HireDate</td><td class="actions"><a asp-action="Edit" asp-route-id="@item.InstructorID">Edit</a><a asp-action="Details" asp-route-id="@item.InstructorID">Details</a><a asp-action="Delete" asp-route-id="@item.InstructorID">Delete</a></td></tr>}</tbody></table>

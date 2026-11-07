@@ -1,0 +1,4 @@
+@page
+@model SchoolAppCoreRazor.Pages.Enrollments.DetailsModel
+@{ ViewData["Title"] = "Details Enrollment"; }
+<h1>Details Enrollment</h1><table><tr><th>Student</th><td>@Model.Item.Student?.FirstName @Model.Item.Student?.LastName</td></tr><tr><th>Course</th><td>@Model.Item.Course?.Title</td></tr><tr><th>Grade</th><td>@Model.Item.Grade</td></tr></table><br /><div class="actions"><a class="btn" asp-page="Edit" asp-route-id="@Model.Item.EnrollmentID">Edit</a><a class="btn secondary" asp-page="Index">Back</a></div>
